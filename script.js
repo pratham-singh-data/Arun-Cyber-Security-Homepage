@@ -106,6 +106,97 @@ const pricing = [
     }
 ]
 
+const attributions = [
+    // availability
+    {
+        name: "klwir art",
+        link: "https://www.flaticon.com/authors/kliwir-art",
+        attributeFor: "assets/availability/available.png"
+    },
+
+    {
+        name: "Pixel Perfect",
+        link: "https://www.flaticon.com/authors/pixel-perfect",
+        attributeFor: "assets/availability/not-applicable.png"
+    },
+
+    {
+        name: "Pixel Perfect",
+        link: "https://www.flaticon.com/authors/pixel-perfect",
+        attributeFor: "assets/availability/unavailable.png"
+    },
+
+    // avatar
+    {
+        name: "Internet Search",
+        link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.hAvqPPsKmzogXulPg8HVqQHaME%26pid%3DApi&f=1&ipt=3a7ff22c9d26c7fd050472ca925c970cc6bf9f4c3667fae4a9100c4c1cf4b845&ipo=images",
+        attributeFor: "assets/avatar/man-1.png"
+    },
+
+    {
+        name: "Internet Search",
+        link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.g2QL3Nv8j-BzQV-d3FJPXQHaKg%26pid%3DApi&f=1&ipt=14d1fb34e595d7cd0309e111082c3e68c55a870cb26edc61f8f70869f0baca0f&ipo=images",
+        attributeFor: "assets/avatar/man-2.png"
+    },
+
+    {
+        name: "Internet Search",
+        link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.DKvqsGoTKBkDYbLRHlxLZQHaKQ%26pid%3DApi&f=1&ipt=241485d15067dbb87422f6da8dc8f0963d6bf661448b54f3f00c0dad3d5735cc&ipo=images",
+        attributeFor: "assets/avatar/woman-1.png"
+    },
+
+    // banner
+    {
+        name: "marcela_net",
+        link: "https://pixabay.com/users/marcela_net-9103609/",
+        attributeFor: "assets/banner/college-students.jpg"
+    },
+
+    {
+        name: "sativis",
+        link: "https://pixabay.com/users/sativis-18702/",
+        attributeFor: "assets/banner/college.jpg"
+    },
+
+    {
+        name: "Inactive account – ID 12019",
+        link: "https://pixabay.com/users/12019-12019/",
+        attributeFor: "assets/banner/offices.jpg"
+    },
+
+    // navigator
+    {
+        name: "icon_small",
+        link: "https://www.flaticon.com/authors/icon-small",
+        attributeFor: "assets/navigator/before.png"
+    },
+
+    {
+        name: "icon_small",
+        link: "https://www.flaticon.com/authors/icon-small",
+        attributeFor: "assets/navigator/next.png"
+    },
+
+    // pricing
+    {
+        name: "Flat Icons",
+        link: "https://www.flaticon.com/authors/flat-icons",
+        attributeFor: "assets/pricing/advanced.png"
+    },
+
+    {
+        name: "lutfix",
+        link: "https://www.flaticon.com/authors/lutfix",
+        attributeFor: "assets/pricing/basic.png"
+    },
+
+    {
+        name: "Freepik",
+        link: "https://www.flaticon.com/authors/freepik",
+        attributeFor: "assets/pricing/custom.png"
+    }
+]
+
 // return image source to display in card data 
 function getPricingImageSrc(inp){
     switch(inp){
@@ -217,6 +308,21 @@ function planCardFiller(){
     document.getElementById("pricing-container").innerHTML = data;
 }
 
+// function to fill footer-attributions div
+function attributionsFiller(){
+    let data = "";
+
+    attributions.forEach((entry) => {
+        data += `
+            <p>
+                <a href=${entry.link} style="color: #ffffff">${entry.name}</a>
+            </p>
+        `;
+    })
+
+    document.getElementById("footer-attributions").innerHTML = data;
+}
+
 // set initial banner image source
 setSource();
 
@@ -225,3 +331,6 @@ setTestimonyData();
 
 // set plans data
 planCardFiller();
+
+// fill atrributions display
+attributionsFiller();
