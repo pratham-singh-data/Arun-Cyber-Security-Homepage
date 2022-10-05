@@ -79,7 +79,7 @@ function setTestimonyData(){
         </div>`;
     })
 
-    data += "<button style='background-color: #1976d2; color: #ffffff; padding: 10px 5px; border-radius: 10px'><strong>Show More</strong></button>"
+    data += `<button style='background-color: #1976d2; color: #ffffff; padding: 10px 5px; border-radius: 10px' onClick="alert('No more testimony data to display in demo site')"><strong>Show More</strong></button>`
     
     // set data in testimony display
     document.getElementById("testimony-display").innerHTML = data;
