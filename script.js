@@ -25,7 +25,7 @@ const testimonials = [
 //pricing data
 const pricing = [
     {
-        image: "/assets/pricing/basic.png",
+        image: "./assets/pricing/basic.png",
         name: "Basic",
         features: [
             {
@@ -52,7 +52,7 @@ const pricing = [
     },
 
     {
-        image: "/assets/pricing/advanced.png",
+        image: "./assets/pricing/advanced.png",
         name: "Advanced",
         features: [
             {
@@ -79,7 +79,7 @@ const pricing = [
     },
 
     {
-        image: "/assets/pricing/custom.png",
+        image: "./assets/pricing/custom.png",
         name: "Custom",
         features: [
             {

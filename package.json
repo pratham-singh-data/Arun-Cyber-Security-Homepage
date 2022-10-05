@@ -1,0 +1,23 @@
+{
+  "name": "arun-homepage",
+  "version": "1.0.0",
+  "description": "An assigment for Arun Cyber Security",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratham-singh-data/Arun-Cyber-Security-Homepage.git"
+  },
+  "author": "pratham-singh-data",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/pratham-singh-data/Arun-Cyber-Security-Homepage/issues"
+  },
+  "homepage": "https://pratham-singh-data.github.io/Arun-Cyber-Security-Homepage/",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
