@@ -164,6 +164,13 @@ const attributions = [
         attributeFor: "assets/banner/offices.jpg"
     },
 
+    // logo
+    {
+        name: "Ilham Fitrotul Hayat",
+        link: "https://www.flaticon.com/authors/ilham-fitrotul-hayat",
+        attributeFor: "assets/logo/logo.png"
+    },
+
     // navigator
     {
         name: "icon_small",
