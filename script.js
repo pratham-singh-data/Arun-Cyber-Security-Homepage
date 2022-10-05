@@ -1,5 +1,7 @@
+// value that deterimines current banner image
 var index = 0;
 
+// student testimonials
 const testimonials = [
     {
         image: "./assets/avatar/man-1.png",
@@ -20,6 +22,7 @@ const testimonials = [
     }
 ]
 
+// returns image data based on index's value
 function getImage() {
   switch (index) {
     case 0:
@@ -31,16 +34,19 @@ function getImage() {
   }
 }
 
+// function to set banner image source
 function setSource() {
   const bannerIMG = document.getElementById("bannerIMG");
   bannerIMG.src = getImage();
 }
 
+// get next image for banner
 function getNextImage() {
   index = (index + 1) % 3;
   setSource();
 }
 
+// get previous image for banner
 function getPrevImage() {
   switch (index) {
     case 0:
@@ -56,8 +62,11 @@ function getPrevImage() {
   setSource();
 }
 
+// sets data in testimony div
 function setTestimonyData(){
     var data = "<h2>Testimonials</h2>";
+
+    // set cards for each testimony
     testimonials.forEach((entry) => {
         data += `<div class="testimonialCard">
         <img src="${entry.image}" alt="${entry.name}" class="testimonialProfile"/>
@@ -72,8 +81,12 @@ function setTestimonyData(){
 
     data += "<button style='background-color: #1976d2; color: #ffffff; padding: 10px 5px; border-radius: 10px'><strong>Show More</strong></button>"
     
+    // set data in testimony display
     document.getElementById("testimony-display").innerHTML = data;
 }
 
+// set initial banner image source
 setSource();
+
+// set testimony data
 setTestimonyData();
