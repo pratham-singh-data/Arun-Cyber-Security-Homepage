@@ -6,7 +6,6 @@
 .banner{
     width: "100%";
     height: "100%";
-    margin: 10px;
 }
 
 .bannerIMGContainer{
@@ -62,6 +61,36 @@
     margin-right: 20px;
 }
 
+.button-primary{
+    background-color: #1976d2; 
+    color: #ffffff; 
+    padding: 10px 5px; 
+    border-radius: 10px;
+}
+
+.enquiry-form{
+    width: "100%";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: "20px";
+    color: #eeeeee;
+    background-color: #1e1e1e;
+    margin: 10px 0px;
+}
+
+.main-enquiry-form{
+    width: 60%;
+    margin: 20px;
+}
+
+.enquiry-input{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 480px) {
     .testimonialCard{
         flex-direction: column; 
@@ -78,5 +107,9 @@
         flex-direction: row;
         width: "100%";
         justify-content: center;
+    }
+
+    .main-enquiry-form{
+        width: 90%;
     }
 }
