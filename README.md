@@ -5,15 +5,11 @@ This is submitted in fulfillment of an assignment of Arun Cyber Security.
 
 ## Features
 
-1. Full webapp is responsive and built using MaterialUI and React.
+1. Full webapp is responsive and built using HTML, CSS and JavaScript.
 
-2. The home page shows the logo of the application and allows you to enter a search query.
+2. The application shows a banner with three images which the user can alter between, an enquiry form, testimonials from three students and pricing plans.
 
-3. After pressing enter on typing a non-empty string, you will be redirected to the search page where you can select from normal searches, images, videos and news tabs.
-
-4. The search page has an application logo, which upon clicking redirects the user to the homepage, same action occurs on entering an empty string.
-
-5. The application features a circular scroller while content is loading and each tab shows by default 15 entries (except the images tab which defaults to 10) and this limit can be exceeded by clicking the "Load More" button which appears as long as there is more data to display.
+3. Footer gives a list of all people to attribute to along with links to their websites.
 
 ## Attributions
 | Contributor                 | Link To Contributor                                                                                                                                                                                                     | Link To File                           |
