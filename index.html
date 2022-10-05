@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Arun Homepage</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="icon" href="./assets/logo/logo.png">
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="bannerIMGContainer">
+                <img class="bannerIMG" alt="college banner" id="bannerIMG" />
+            </div>
+
+            <div class="bannerSwitcherContainer" style="display: flex; flex-direction: row; justify-content: center; margin-top: 10px;">
+                <img class="bannerSwitcher" onClick="getPrevImage()" style="width: 40px; height: 30px; margin-right: 10px;" src="./assets/navigator/before.png" alt="previous"/>
+
+                <img class="bannerSwitcher" onClick="getNextImage()" style="width: 40px; height: 30px" src="./assets/navigator/next.png" alt="next"/>
+            </div>
+        </div>
+
+        <div class="about-us-container">
+            <div class="about-us">
+                <h1 style="display: flex; flex-direction: row; justify-content: center;">
+                    <p style="border-bottom: 2px solid #1976d2">
+                        About Us
+                    </p>
+                </h1>
+                <p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque sit amet porttitor eget. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis. Nulla facilisi morbi tempus iaculis. Scelerisque varius morbi enim nunc. Varius morbi enim nunc faucibus a. Id porta nibh venenatis cras sed felis. Ornare suspendisse sed nisi lacus sed viverra tellus in. Amet risus nullam eget felis. Velit euismod in pellentesque massa placerat duis ultricies lacus. At tellus at urna condimentum mattis pellentesque. Tortor at risus viverra adipiscing at in tellus integer.
+                        </p>
+    
+                        <p>
+                            Suspendisse sed nisi lacus sed viverra. Etiam erat velit scelerisque in dictum non consectetur a. Ut tellus elementum sagittis vitae et leo duis. Urna porttitor rhoncus dolor purus. Faucibus pulvinar elementum integer enim. Luctus venenatis lectus magna fringilla urna. Enim neque volutpat ac tincidunt vitae. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Et malesuada fames ac turpis egestas sed tempus urna. Id volutpat lacus laoreet non curabitur gravida.
+                        </p>
+    
+                        <p>
+                            Lobortis elementum nibh tellus molestie nunc non blandit. Et malesuada fames ac turpis egestas integer eget aliquet nibh. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Et sollicitudin ac orci phasellus egestas tellus rutrum. Turpis massa sed elementum tempus egestas sed. Tempor id eu nisl nunc mi ipsum faucibus vitae. Imperdiet nulla malesuada pellentesque elit eget. Urna et pharetra pharetra massa massa ultricies mi quis. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Adipiscing vitae proin sagittis nisl rhoncus mattis. Enim nulla aliquet porttitor lacus. Ipsum dolor sit amet consectetur adipiscing. Elementum eu facilisis sed odio morbi quis commodo. Posuere morbi leo urna molestie at. Eget nunc lobortis mattis aliquam faucibus. Natoque penatibus et magnis dis parturient. Sed blandit libero volutpat sed cras ornare. In vitae turpis massa sed elementum tempus egestas sed. Tellus mauris a diam maecenas sed enim ut sem viverra.
+                        </p>
+                </p>
+            </div>
+        </div>
+
+        <div class="enquiry-form">
+            <h1>Register An Enquiry</h1>
+            <form class="main-enquiry-form" method="get">
+                <input class="enquiry-input" type="text" required placeholder="Enter Your Name Here..."/><br/>
+                <input class="enquiry-input" type="email" required placeholder="Enter Your EmailID Here..."/><br/>
+                <input class="enquiry-input" type="tel" placeholder="Enter Your Phone Number Here..."/><br/>
+                <textarea class="enquiry-input" placeholder="Enter Enquiry Details..." required rows="10"></textarea><br/>
+                <div style="display: flex; flex-direction: row; justify-content: center; width: 100%;">
+                    <button class="button-primary" type="submit" onClick="alert('Submit Example, No Actual Submission Made')"><strong>Submit</strong></button>
+                </div>
+            </form>
+        </div>
+
+        <div id="testimony-display" class="testimonialsContainer">
+        </div>
+
+        <div id="pricing-container" class="plan-holder">
+        </div>
+
+        <div class="footer">
+            <p>Made by <a href="https://github.com/pratham-singh-data/" style="color: #ffffff">Pratham Singh</a></p>
+
+            <div id="footer-attributions" style="width: 100%;"></div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner{
+    width: "100%";
+    height: "100%";
+}
+
+.bannerIMGContainer{
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.bannerIMG{
+    width: 100%; 
+    height: 100%
+}
+
+.bannerSwitcherContainer{
+    width: "100%";
+    display: "flex";
+    flex-direction: "row";
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerSwitcher:hover{
+    border: "10px solid #000000";
+}
+
+.testimonialsContainer{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.testimonialCard{
+    display: flex; 
+    flex-direction: row; 
+    border-bottom: 2px solid #555555; 
+    border-top: 2px solid #555555; 
+    padding: 5px; 
+    align-items: center; 
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.testimonialProfile{
+    width: 80px; 
+    height: 80px; 
+    margin-right: 20px;
+}
+
+.button-primary{
+    background-color: #1976d2; 
+    color: #ffffff; 
+    padding: 10px 5px; 
+    border-radius: 10px;
+}
+
+.enquiry-form{
+    width: "100%";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: "20px";
+    color: #eeeeee;
+    background-color: #1e1e1e;
+    margin: 10px 0px;
+}
+
+.main-enquiry-form{
+    width: 60%;
+    margin: 20px;
+}
+
+.about-us{
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+}
+
+.about-us-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.enquiry-input{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.plan-holder{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #382b73;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.plan-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #aaaaaa;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0px 10px 10px 0px;
+}
+
+.plan-card-header{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card-image{
+    width: 100px;
+    height: 100px;
+}
+
+.plan-card-data{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #555555;
+    margin-bottom: 2px;
+}
+
+.footer{
+    width: "100%";
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .testimonialCard{
+        flex-direction: column; 
+        padding: 20px;
+    }
+
+    .testimonialProfile{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .testimonialName{
+        display: flex;
+        flex-direction: row;
+        width: "100%";
+        justify-content: center;
+    }
+
+    .main-enquiry-form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .plan-holder{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-card{
+        width: 80%;
+    }
+}
