@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Homepage title</title>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="bannerIMGContainer">
+                <img class="bannerIMG" alt="college banner" id="bannerIMG" />
+            </div>
+
+            <div class="bannerSwitcherContainer" style="display: flex; flex-direction: row; justify-content: center; margin-top: 10px;">
+                <img class="bannerSwitcher" onClick="getPrevImage()" style="width: 40px; height: 30px; margin-right: 10px;" src="./assets/navigator/before.png" alt="previous"/>
+
+                <img class="bannerSwitcher" onClick="getNextImage()" style="width: 40px; height: 30px" src="./assets/navigator/next.png" alt="next"/>
+            </div>
+        </div>
+
+        <div id="testimony-display" class="testimonialsContainer">
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
