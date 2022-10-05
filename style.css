@@ -104,6 +104,49 @@
     border-radius: 10px;
 }
 
+.plan-holder{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #382b73;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.plan-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #aaaaaa;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+}
+
+.plan-card-header{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card-image{
+    width: 100px;
+    height: 100px;
+}
+
+.plan-card-data{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #555555;
+    margin-bottom: 2px;
+}
+
 @media screen and (max-width: 480px) {
     .testimonialCard{
         flex-direction: column; 
@@ -124,5 +167,16 @@
 
     .main-enquiry-form{
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .plan-holder{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-card{
+        width: 80%;
     }
 }

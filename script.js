@@ -22,6 +22,99 @@ const testimonials = [
     }
 ]
 
+//pricing data
+const pricing = [
+    {
+        image: "/assets/pricing/basic.png",
+        name: "Basic",
+        features: [
+            {
+                name: "Recorded Classes",
+                availability: 1
+            },
+            {
+                name: "Doubt Solving Classes",
+                availability: 1
+            },
+            {
+                name: "Study Material",
+                availability: 0
+            },
+            {
+                name: "Live Classes",
+                availability: 0
+            },
+            {
+                name: "Test Papers",
+                availability: 0
+            },
+        ]
+    },
+
+    {
+        image: "/assets/pricing/advanced.png",
+        name: "Advanced",
+        features: [
+            {
+                name: "Recorded Classes",
+                availability: 1
+            },
+            {
+                name: "Doubt Solving Classes",
+                availability: 1
+            },
+            {
+                name: "Study Material",
+                availability: 1
+            },
+            {
+                name: "Live Classes",
+                availability: 1
+            },
+            {
+                name: "Test Papers",
+                availability: 1
+            },
+        ]
+    },
+
+    {
+        image: "/assets/pricing/custom.png",
+        name: "Custom",
+        features: [
+            {
+                name: "Recorded Classes",
+                availability: 2
+            },
+            {
+                name: "Doubt Solving Classes",
+                availability: 2
+            },
+            {
+                name: "Study Material",
+                availability: 2
+            },
+            {
+                name: "Live Classes",
+                availability: 2
+            },
+            {
+                name: "Test Papers",
+                availability: 2
+            },
+        ]
+    }
+]
+
+// return image source to display in card data 
+function getPricingImageSrc(inp){
+    switch(inp){
+        case 0: return "./assets/availability/unavailable.png"
+        case 1: return "./assets/availability/available.png";
+        default: return "./assets/availability/not-applicable.png";
+    }
+}
+
 // returns image data based on index's value
 function getImage() {
   switch (index) {
@@ -85,8 +178,50 @@ function setTestimonyData(){
     document.getElementById("testimony-display").innerHTML = data;
 }
 
+// function to add cards to card-holder div
+function planCardFiller(){
+    let data = "";
+
+    // add card to data
+    pricing.forEach((entry) => {
+        data += `
+        <div class="plan-card">
+        <div class="plan-card-header">
+            <img src=${entry.image} alt=${entry.name} class="plan-card-image" />
+            <h2>${entry.name}</h2>
+        </div>
+        <div style="width: 100%;">
+        `
+
+        entry.features.forEach((feature) => {
+
+            data += `
+            <p class="plan-card-data">
+                <span>${feature.name}</span>
+                <img style="width: 20px; height: 20px;" src="${getPricingImageSrc(feature.availability)}" alt="available"/>
+            </p>
+            `
+        })
+
+        data += `</div>
+        <button class="button-primary" style="width: 50%" onClick="alert('This is a demo site and no transaction can be made.')">
+            <strong>
+                Buy
+            </strong>
+        </button>
+    </div>
+        `
+    })
+
+    // add data to pricing-container div
+    document.getElementById("pricing-container").innerHTML = data;
+}
+
 // set initial banner image source
 setSource();
 
 // set testimony data
 setTestimonyData();
+
+// set plans data
+planCardFiller();
